@@ -9,8 +9,6 @@ if (process.env.DB === "testing") {
   uri = process.env.uriDB;
 }
 
-console.log("node.env.DB");
-
 mongoose.set("useFindAndModify", false);
 mongoose.set("useCreateIndex", true);
 

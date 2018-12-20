@@ -1,4 +1,4 @@
-process.env.BD = "testing";
+process.env.DB = "testing";
 
 const User = require("../models/user");
 const chai = require("chai");
@@ -9,12 +9,12 @@ const server = require("../app");
 chai.use(chaiHttp);
 
 describe("Test App", () => {
-  /*beforeEach(function(done) {
+  beforeEach(function(done) {
     User.deleteMany({}, err => {
       done();
     });
-  });*/
-  /*describe("Users", () => {
+  });
+  describe("Users", () => {
     it("Save New User", done => {
       chai
         .request(server)
@@ -30,7 +30,7 @@ describe("Test App", () => {
           done();
         });
     });
-  });*/
+  });
 
   describe("get main page", () => {
     it("test get main page", done => {
