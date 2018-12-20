@@ -1,1 +1,1 @@
-# nodejs-hw-main
+# Главное ДЗ по курсу node.js loftschool
