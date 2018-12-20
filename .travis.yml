@@ -11,4 +11,4 @@ deploy:
     secure: $he
   strategy: git
   app:
-    master: api-nodejs-course
+    master: nodejs-hw-main
