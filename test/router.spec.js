@@ -9,7 +9,7 @@ const server = require("../app");
 chai.use(chaiHttp);
 
 describe("Test App", () => {
-  beforeEach(function(done) {
+  /*beforeEach(function(done) {
     User.deleteMany({}, err => {
       done();
     });
@@ -30,7 +30,7 @@ describe("Test App", () => {
           done();
         });
     });
-  });
+  });*/
 
   describe("get main page", () => {
     it("test get main page", done => {

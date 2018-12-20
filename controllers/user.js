@@ -45,7 +45,6 @@ module.exports = {
      */
     uploadImage(req)
       .then(path => {
-        console.log("img path = ", path);
         User.findOneAndUpdate({ id: req.params.id }, { image: path }).then(
           () => {
             res.status(200).json({ path: path });
